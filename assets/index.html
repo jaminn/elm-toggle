@@ -4,39 +4,27 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <script src="elm.js"></script>
+    <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
     <style>
         body {
             margin: 0;
             padding: 0;
         }
+
+        * {
+            font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+            user-select: none;
+         }
     </style>
 </head>
 <body>
     <div id="elm"></div>
 </body>
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
-<script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyDciTj6HGEeSeK-AKZbK9PB-Y4AWFPbiE0",
-    authDomain: "elmfireblog.firebaseapp.com",
-    projectId: "elmfireblog",
-    storageBucket: "elmfireblog.appspot.com",
-    messagingSenderId: "895213943496",
-    appId: "1:895213943496:web:5eb35462dc6458796783fd"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-</script>
-
+<script src="component.js"></script>
 <script>
 var app = Elm.Main.init({
     node: document.getElementById('elm')
 });
-var db = firebase.database();
-
 </script>
 
 </html>

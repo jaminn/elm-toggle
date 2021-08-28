@@ -8,5 +8,6 @@ import Test exposing (..)
 
 suite : Test
 suite =
-    describe "Hello 함수 테스트"
-        []
+    describe "테스트"
+        [ todo "테스트를 구현하세요!"
+        ]

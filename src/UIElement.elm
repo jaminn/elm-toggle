@@ -4,9 +4,10 @@ import Css exposing (..)
 import Css.Transitions as Transition exposing (transition)
 import Html.Styled exposing (..)
 import Html.Styled.Attributes exposing (css)
+import Html.Styled.Events exposing (onClick)
 
 
-toggle isSelected =
+toggle msg isSelected =
     let
         widthVal =
             60
@@ -29,7 +30,8 @@ toggle isSelected =
                 translateX (px 0)
     in
     div
-        [ css
+        [ onClick msg
+        , css
             [ width (px widthVal)
             , height (px heightVal)
             , backgroundColorConditional
