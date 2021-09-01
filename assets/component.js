@@ -25,7 +25,7 @@ customElements.define('float-div',
                 var compStyles = window.getComputedStyle(ele);
                 var rect = ele.getBoundingClientRect();
                 this.style.position = "absolute";
-                this.style.left = rect.left + 'px';
+                this.style.left = ele.offsetLeft + 'px';
                 this.style.top = ele.offsetTop + 'px';
                 this.style.width = rect.width + 'px';
                 this.style.height = rect.height + 'px';
